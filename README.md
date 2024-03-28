@@ -1,29 +1,23 @@
-# Create T3 App
+# Resume Builder
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is a simple app that allows you to create a resume using a form. The app is built using the T3 stack.
 
-## What's next? How do I make an app with this?
+## How templates work
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+This app uses the mustache templating engine to complete the resume with the resume items. Then, it uses the `Latex.js` binary to convert the Latex template to HTML. Finally, the app uses the `html-pdf` package to convert the HTML resume to a PDF file.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## How create a resume
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+To create a new resume, you need to login using your LinkedIn account. Then, you should click the create new resume button. This will bring a popup form where you can select the items of your LinkedIn profile that you want included in that resume based on the template you choose.
 
-## Learn More
+## DISCLAIMER:
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+* This app is only a work in progress and is not ready for production, but use at your own risk, as it might not work or upload your own templates. For now.
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+* This app is not affiliated with LinkedIn, and it is not endorsed by LinkedIn.
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+* I don't save your LinkedIn data, I only use it to create the resume. This might change in the future in order to implement better features.
+    - [ ] Save the created resume to be modified later.
+    - [ ] Save the resume template to be modified later.
+    - [ ] Save the LinkedIn data to be used in the future.
 
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
